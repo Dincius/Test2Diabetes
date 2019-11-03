@@ -1,0 +1,75 @@
+html, body {
+	width: 80%;
+    display: table;
+    margin: auto;
+    font-family: Verdana;
+}
+.kmi {display: table-cell;
+    vertical-align: middle;	
+	background-color: #D8BFD8;}
+
+.top{
+
+	display: inline-block;
+align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 6%;
+	 transform: translate(20%);
+}
+
+#main {
+    display: table-cell;
+    vertical-align: middle;	
+    	background-color: #D8BFD8;
+
+}
+
+.logo {
+	display: inline-block;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro {
+	text-align: justify;
+	margin-right: 8%;
+	text-indent: 5%;
+}
+
+#header {
+		margin-left: 8%;
+		margin-right: 	8%;
+}
+
+.footer {
+  background-color: #FFE4E1;
+  padding: 10px;
+  text-align: left;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.inform{
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.rezultatai{
+	text-align: justify;
+}
+
+li{
+		list-style: none;
+		display: inline;
+		margin: auto;
+
+}
+
+.physics {
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+	width: 20%;
+} 

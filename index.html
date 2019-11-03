@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIABETO RIZIKOS VERTINIMAS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<script type="text/javascript" src="scripts/script.js"></script>
+<body class="container">
+	<div id="main"><!-- open main div -->
+		<div class="top">
+			<img src="images/smlpc-0.png" width="10%">
+			<img src="images/idf_lions_logos.png" width="50%">
+		</div>
+		<div><ul>
+			<li>	
+				<h3 align="center">Sužinok savo riziką susirgti 2 tipo cukriniu diabetu</h3>
+
+				<p class="intro">	Tarptautinės diabeto federacijos (The International Diabetes Federation) duomenimis, daugiau nei 200 mln. žmonių serga cukriniu diabetu, tačiau to nežino. Dauguma jų serga 2 tipo diabetu. </p>
+				<p class="intro">	
+					Tarptautinė diabeto federacija ir Sveikatos mokymo ir ligų prevencijos centras parengė anketą, skirtą įsivertinti savo riziką susirgti 2 tipo cukriniu diabetu per artimiausius 10 metų. Testas paremtas Suomijos nacionalinio sveikatos ir gerovės instituto sukurtu Suomijos diabeto rizikos vertinimu (Finnish Diabetes Risk Score, FINDRISC).  
+				</p>
+				<p class="intro">	
+					Atlikti šį testą užtrunka tik kelias minutes. Tai lengvas, greitas ir konfidencialus būdas išsiaiškinti savo riziką susirgti 2 tipo diabetu.
+				</p> </li>
+			</ul>
+		</div>
+		<div id="header">
+
+			<form id="form1">
+
+				<div>
+					<h4>1. Koks Jūsų amžius?</h4>
+					<img class="physics" src="images/man.png">
+					<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Mažiau nei 45 metai</label> <br>	
+					<label for="var_join"><input type="radio" name="variable" value="2" id="var_join" />45–54 metai</label><br>
+					<label for="var_info"><input type="radio" name="variable" value="3" id="var_info" />55–64 metai</label><br>
+					<label for="var_condition"><input type="radio" name="variable" value="4" id="var_condition"/>Per 64 metus</label>
+					<div><h4 class="mykmi">2. Jūsų kūno masės indeksas yra:</h4>
+						<a href="kmi.html" target="_blank">Paskaičiuoti savo KMI</a><br>
+						<label for="sub_string"><input type="radio" name="sub" value="0" id="sub_string"/>Mažiau nei 25 kg/m2</label><br>
+						<label for="sub_join"><input type="radio" name="sub" value="1" id="sub_join"/>25–30 kg/m2</label><br>
+						<label for="sub_info"><input type="radio" name="sub" value="3" id="sub_info" />Daugiau nei 30 kg/m2</label>
+					</div>
+					<h4>3. Kokia yra jūsų liemens apimtis?</h4>
+					<p>	VYRAMS</p>
+					<label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Mažiau nei 94 cm</label><br>
+					<img class="physics" src="images/fat.png">
+					<label for="cat_join"><input type="radio" name="con" value="3" id="cat_join" />94–102 cm</label><br>
+					<label for="cat_info"><input type="radio" name="con" value="4" id="cat_info" />Daugiau nei 102 cm</label><br>
+					<p>	MOTERIMS</p>
+					<label for="cat_string1"><input type="radio" name="con" value="0" id="cat_string1" />Mažiau nei 80 cm</label><br>
+					<label for="cat_join1"><input type="radio" name="con" value="3" id="cat_join1" />80-88 cm</label><br>
+					<label for="cat_info1"><input type="radio" name="con" value="4" id="cat_info1" />Daugiau nei 88 cm</label>
+					<h4>4. Ar kasdien būnate fiziškai aktyvūs bent 30 min. darbe ir (ar) laisvalaikiu (įskaitant įprastą kasdieninę veiklą)?</h4>
+					<img class="physics" src="images/physics.png">
+					<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Taip</label><br>
+					<label for="if_join"><input type="radio" name="ifstate" value="2" id="if_join" />Ne</label>
+					<h4>5. Kaip dažnai valgote vaisius, daržoves ir uogas?</h4>
+					<label for="berry_string"><input type="radio" name="berrystate" value="0" id="berry_string" />Kiekvieną dieną</label><br>
+					<label for="berry_join"><input type="radio" name="berrystate" value="1" id="berry_join" />Ne kiekvieną dieną</label>
+					<h4>6. Ar kada nors reguliariai vartojote vaistus nuo aukšto kraujo spaudimo?</h4>
+					<img class="physics" src="images/heart.png">
+					<label for="med_string"><input type="radio" name="medstate" value="0" id="med_string" />Ne</label><br>
+					<label for="med_join"><input type="radio" name="medstate" value="2" id="med_join" />Taip</label>
+					<h4>7.	Ar jums kada nors buvo nustatytas padidėjęs gliukozės kiekis kraujyje (pvz., profilaktinio patikrinimo, ligos ar nėštumo metu)?</h4>
+					<label for="gl_string"><input type="radio" name="glstate" value="0" id="gl_string" />Ne</label><br>
+					<label for="gl_join"><input type="radio" name="glstate" value="5" id="gl_join" />Taip</label>
+					<h4>8.	Ar jūsų šeimoje (susijusioje kraujo ryšiu) yra kam nors diagnozuotas diabetas (1 ar 2 tipo)?</h4>
+					<img class="physics" src="images/family.png">
+					<label for="seim_string"><input type="radio" name="seim" value="0" id="seim_string"/>Ne</label><br>
+					<label for="seim_join"><input type="radio" name="seim" value="3" id="seim_join"/>Taip (vienam iš senelių, tetų, dėdžių ar pirmos eilės pusbrolių, pusseserių)</label><br>
+					<label for="seim_info"><input type="radio" name="seim" value="5" id="seim_info" />Taip (vienam iš tėvų, seserų, brolių ar vaikų)</label>
+					<br>
+					<br>	
+					<button type="submit" value="Skaičiuoti">Įvertinti</button>
+				</form>
+				<p>Jūsų surinktų balų suma yra: <span id="grade">__</span></p>
+				<p><span id="grade2"></span></p>
+				<br>
+
+				<script>
+					document.getElementById("form1").onsubmit=function() {
+						variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+						sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+						con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+						ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+						berrystate = parseInt(document.querySelector('input[name = "berrystate"]:checked').value);
+						medstate = parseInt(document.querySelector('input[name = "medstate"]:checked').value);
+						glstate = parseInt(document.querySelector('input[name = "glstate"]:checked').value);
+						seim = parseInt(document.querySelector('input[name = "seim"]:checked').value);
+
+
+						result = variable + sub + con + ifstate + berrystate	+ medstate + glstate + seim;
+						document.getElementById("grade").innerHTML = result;
+						if (result <= 11) {result2 = "Itin maža rizika: tik 1 iš 100 šiai rizikos grupei priklausančių asmenų turi riziką susirgti. <br> Yra dalykų, kurių negalima pakeisti – tai genetika ir amžius. Kiti diabeto rizikos veiksniai, tokie kaip antsvoris, pilvinis nutukimas, pasyvus gyvenimo būdas, mitybos įpročiai ir rūkymas, priklauso nuo jūsų. Jūsų gyvenimo būdo pasirinkimas gali padėti išvengti 2 tipo diabeto atsiradimo iki gilios senatvės. <br> Jei jūsų šeimoje kam nors yra diagnozuotas diabetas, jums derėtų stengtis nepriaugti svorio. Liemens apimties padidėjimas iš esmės padidina riziką susirgti 2 tipo cukriniu diabetu, tuo tarpu pakankamas fizinis aktyvumas gali padėti sumažinti riziką. Taip pat reikėtų kontroliuoti savo mitybą: stengtis kasdien vartoti skaidulų turinčius grūdinius produktus ir daržoves. Iš mitybos raciono derėtų išbraukti sočiąsias riebalų rūgštis ir vartoti augalinės kilmės riebalus."};
+						if (result >= 7 && result <= 11) {result2 = "Maža rizika: apytikriai 1 iš 25 žmonių gali susirgti. <br> Yra dalykų, kurių negalima pakeisti – tai genetika ir amžius. Kiti diabeto rizikos veiksniai, tokie kaip antsvoris, pilvinis nutukimas, pasyvus gyvenimo būdas, mitybos įpročiai ir rūkymas, priklauso nuo jūsų. Jūsų gyvenimo būdo pasirinkimas gali padėti išvengti 2 tipo diabeto atsiradimo iki gilios senatvės. <br> Jei jūsų šeimoje kam nors yra diagnozuotas diabetas, jums derėtų stengtis nepriaugti svorio. Liemens apimties padidėjimas iš esmės padidina riziką susirgti 2 tipo cukriniu diabetu, tuo tarpu pakankamas fizinis aktyvumas gali padėti sumažinti riziką. Taip pat reikėtų kontroliuoti savo mitybą: stengtis kasdien vartoti skaidulų turinčius grūdinius produktus ir daržoves. Iš mitybos raciono derėtų išbraukti sočiąsias riebalų rūgštis ir vartoti augalinės kilmės riebalus."};
+						if (result >= 12 && result <= 20) {result2 = "Padidėjusi rizika: 1 iš 6 žmonių gali susirgti. <br> Turėtumėte pasitikrinti gliukozės kiekį kraujyje (nevalgius ir po valgio ar suvartojus gliukozės dozę), kad išsiaiškintumėt, ar sergate diabetu. <br> Ankstyvos 2 tipo diabeto formos neturi simptomų. Jums derėtų susirūpinti dėl fizinio aktyvumo ir valgymo įpročių bei atkreipti dėmesį į savo svorį, kad išvengtumėte šios ligos. Prašome kreiptis į savo šeimos gydytoją ar savivaldybės visuomenės sveikatos specialistą."};
+						if (result > 20) {result2 = "Aukšta rizika: 1 iš 2 žmonių gali susirgti.<br> Turėtumėte pasitikrinti gliukozės kiekį kraujyje (nevalgius ir po valgio ar suvartojus gliukozės dozę), kad išsiaiškintumėt, ar sergate diabetu. <br> Ankstyvos 2 tipo diabeto formos neturi simptomų. Jums derėtų susirūpinti dėl fizinio aktyvumo ir valgymo įpročių bei atkreipti dėmesį į savo svorį, kad išvengtumėte šios ligos. Prašome kreiptis į savo šeimos gydytoją ar savivaldybės visuomenės sveikatos specialistą."};
+
+						document.getElementById("grade2").innerHTML = result2; 
+
+
+
+
+return false; // required to not refresh the page; just leave this here
+
+
+} //this ends the submit function
+</script>
+</div>
+</div><!-- close main div -->
+
+				<div class="footer">
+					<p class="inform">Daugiau informacijos:</p></li>
+					<p> <a href="http://www.smlpc.lt/media/file/Metodine%20medziaga/2014-12-15%20Sveikos-mitybos-rekomendacijos-2011%20RB%20AB.pdf">
+					Sveikos gyvensenos rekomendacijos </a></p>
+					<p> <a href="http://www.smlpc.lt/media/image/Naujienoms/2017%20metai/Mityba%20ir%20fizinis%20aktyvumas/_INFORM_vartotojams_medz_kaip_.pdf">
+					Kaip tinkamai pasirinkti sveikatai palankius maisto produktus</a></p>
+					<p> <a href="http://www.smlpc.lt/media/image/Naujienoms/2017%20metai/Mityba%20ir%20fizinis%20aktyvumas/_REKOM_VSBams_Darzoviu_vart_skat.pdf">Daržovių vartojimo skatinimo rekomendacijos </a></p></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>DIABETO RIZIKOS VERTINIMAS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+	<script type="text/javascript" src="scripts/script.js"></script>
+<body class="kmi">
+	<form>
+            <h4>KMI skaičiuoklė</h4>
+            <p>Apskaičiuokite savo KMI ir pasirinkite atitinkamą intervalą.</p>
+            <input id="weight" type="text" placeholder="Jūsų svoris kilogramais" />
+            <br />
+            <br />
+            <input id="height" type="text" placeholder="Jūsų ūgis metrais" />            
+            <input class = "submit" type="button"  value="Skaičiuoti" onclick="bmi()" />
+            <p id="resultkmi"></p>
+        </form>
+
+        <script>function bmi() {
+var height = Number(document.getElementById("height").value);
+var weight = Number(document.getElementById("weight").value);
+var resultkmi = weight / (height * height);
+document.getElementById("resultkmi").innerHTML = "Jūsų KMI yra: " + resultkmi;
+}</script>
